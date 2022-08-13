@@ -81,8 +81,6 @@ params = {'key': key,
 
 prediction = requests.get(url=url, params=params).json()
 st.markdown("***")
-#st.write('## Your predicted fare is', prediction['prediction'], "$")
-
 
 st.write('## Your predicted fare:')
 st.write('##', prediction['prediction'], "$")
